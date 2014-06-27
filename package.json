@@ -1,0 +1,27 @@
+{
+  "name": "lexjs",
+  "version": "0.0.1",
+  "description": "lexjs",
+  "bin": {
+    "lexjs": "./bin/lexjs"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/lexjs.git"
+  },
+  "dependencies": {
+  },
+  "keywords": ["lexjs"],
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/xudafeng/lexjs",
+  "author": "xudafeng",
+  "email": "xudafeng[at]126.com",
+  "blog": "http://xdf.me",
+  "license": "MIT"
+}
