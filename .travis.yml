@@ -3,10 +3,12 @@ addons:
   apt:
     packages:
       - libxml2-dev
+      - libgsl0-dev
 sudo: false
 cache: packages
+latex: false
+dist: precise
 warnings_are_errors: false
 install:
-  - R -e 'devtools::install_deps(dep = T)'
-script:
-  - R CMD build .
+    - R -e 'install.packages("devtools")'
+    - R -e 'devtools::install_deps(dep = T)'
