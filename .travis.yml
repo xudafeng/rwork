@@ -1,4 +1,12 @@
 language: R
+addons:
+  apt:
+    packages:
+      - libxml2-dev
 sudo: false
 cache: packages
 warnings_are_errors: false
+install:
+  - R -e 'devtools::install_deps(dep = T)'
+script:
+  - R CMD build .
