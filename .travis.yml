@@ -7,7 +7,6 @@ addons:
 sudo: false
 cache: packages
 latex: false
-dist: precise
 warnings_are_errors: false
 install:
     - R -e 'install.packages("devtools")'

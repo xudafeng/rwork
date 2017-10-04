@@ -1,10 +1,24 @@
-getFib <- function(x) {
-  if (x == 1 || x == 2) {
-    res <- 1
-  } else {
-    res <- getFib(x-1) + getFib(x-2)
+fibonacci <- function(i) {
+  if (i == 1 || i == 2) {
+    return (1)
   }
-  return(res)
+  return (fibonacci(i - 1) + fibonacci(i - 2))
 }
 
-getFib(1000)
+total <- 0
+current <- 0
+max <- 4000000
+p <- 1
+
+while (current < max) {
+  current <- fibonacci(p)
+  print(sprintf("get number:%d", current))
+
+  if (current %% 2 == 0) {
+    total <- total + current
+  }
+
+  p <- p + 1
+}
+
+print(sprintf("total number:%d", total))
